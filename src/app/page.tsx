@@ -25,7 +25,7 @@ export default function Home() {
         scrollTrigger: {
           trigger: document.body,
           start: "top top",
-          end: "+=8000",
+          end: "+=9000",
           scrub: 0.5,
         },
       }
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* Contenido de relleno para permitir el scroll */}
-      <div style={{height: "8000vh"}}></div>
+      <div style={{height: "2000vh"}}></div>
     </>
   );
 }
