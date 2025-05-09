@@ -11,7 +11,7 @@ export default function IntroLogo() {
   const logoRef = useRef<HTMLDivElement>(null);
   const [showLogo, setShowLogo] = useState(true);
 
-  // Montar y desmontar el logo según scroll
+  // Mount and unmoint logo according to scroll
   useEffect(() => {
     ScrollTrigger.create({
       trigger: document.body,
@@ -29,7 +29,7 @@ export default function IntroLogo() {
     });
   }, []);
 
-  // Animaciones que se aplican cada vez que el logo se monta
+  // Antimations that are applied each time the logo is mounted
   useEffect(() => {
     if (!logoRef.current || !showLogo) return;
 
@@ -59,6 +59,7 @@ export default function IntroLogo() {
           ref={logoRef}
           className="flex justify-center items-center fixed top-0 left-0 w-full h-full opacity-0"
         >
+          {/* Twenty one pillots svg logo */}
           <svg
             id="_MAIN_Logo"
             data-name="[MAIN] Logo"

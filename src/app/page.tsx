@@ -11,7 +11,9 @@ import IntroLogo from "@/components/IntroLogo";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  // Change smoothly the background color, white to black
   useEffect(() => {
+    // Indicate scroll position to top of the page always at start
     window.scrollTo(0, 0);
 
     gsap.fromTo(
@@ -44,7 +46,7 @@ export default function Home() {
   return (
     <>
       <IntroLogo />
-      <div style={{height: "400vh"}}>
+      <div style={{height: "200vh"}}>
         <div className="flex flex-col items-center justify-center px-10">
           <Image
             src="/images/clancyVerticalRed.webp"
