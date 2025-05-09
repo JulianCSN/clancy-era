@@ -6,32 +6,32 @@ import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 
+import IntroLogo from "@/components/IntroLogo";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  const logoRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (!logoRef.current) return;
 
     gsap.fromTo(
-      logoRef.current,
+      document.body,
       {
-        scale: 1,
+        backgroundColor: "white",
       },
       {
-        scale: 250,
+        backgroundColor: "#231f20",
         scrollTrigger: {
           trigger: document.body,
           start: "top top",
-          end: "+=9000",
+          end: "+=1000",
           scrub: 0.5,
         },
       }
     );
   }, []);
 
+  // Lenis syncrinization with GSAP
   useEffect(() => {
     const lenis = new Lenis();
     lenis.on("scroll", ScrollTrigger.update);
@@ -43,21 +43,19 @@ export default function Home() {
 
   return (
     <>
-      <div
-        ref={logoRef}
-        className="flex justify-center items-center fixed top-0 left-0 w-full h-full"
-      >
-        <Image
-          src="/images/logoBandClancyEra.svg"
-          alt="Twenty One Pilots Logo"
-          width={200}
-          height={200}
-          priority
-        />
+      <IntroLogo />
+      <div style={{height: "400vh"}}>
+        <div className="flex flex-col items-center justify-center px-10">
+          <Image
+            src="/images/clancyVerticalRed.webp"
+            alt="Clancy Text"
+            width={100}
+            height={100}
+            priority
+            quality={100}
+          />
+        </div>
       </div>
-
-      {/* Contenido de relleno para permitir el scroll */}
-      <div style={{height: "2000vh"}}></div>
     </>
   );
 }
