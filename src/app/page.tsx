@@ -50,16 +50,15 @@ export default function Home() {
       <ClancyTape repeat={50} position="right" />
       <IntroLogo />
       <div style={{height: "400vh"}}>
-        <div className="flex flex-col items-center justify-center px-10">
-          <Image
-            src="/images/clancyVerticalRed.webp"
-            alt="Clancy Text"
-            width={150}
-            height={150}
-            priority
-            quality={100}
-            className="w-12 md:w-20"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center px-10">
+          <div>
+            <h1 className="text-3xl md:text-7xl text-center text-yellow">
+              WELCOME TO THE
+            </h1>
+            <h1 className="text-3xl md:text-7xl text-center text-red">
+              CLANCY ERA
+            </h1>
+          </div>
         </div>
       </div>
     </>

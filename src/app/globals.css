@@ -7,6 +7,12 @@
   src: url("/fonts/MartianMono.ttf") format("truetype");
 }
 
+@theme {
+  --color-dark: #231f20;
+  --color-red: #e63025;
+  --color-yellow: #ffd800;
+}
+
 body {
   font-family: "Martian Mono", Arial, Helvetica, sans-serif;
   background-color: white;
