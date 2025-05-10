@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Twenty One Pilots | Clancy Era",
+  title: "Twenty One Pilots | Clancy",
   description: "Discover the Clancy Era of Twenty One Pilots!",
 };
 
