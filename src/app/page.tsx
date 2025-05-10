@@ -20,7 +20,7 @@ export default function Home() {
     gsap.fromTo(
       document.body,
       {
-        backgroundColor: "white",
+        backgroundColor: "#231f20",
       },
       {
         backgroundColor: "#231f20",
