@@ -36,7 +36,7 @@ export default function IntroLogo() {
     // Fade in inicial
     gsap.fromTo(logoRef.current, {opacity: 0}, {opacity: 1, duration: 1.5});
 
-    // Escala al hacer scroll
+    // Scale up logo
     gsap.fromTo(
       logoRef.current,
       {scale: 1},
@@ -57,7 +57,7 @@ export default function IntroLogo() {
       {showLogo && (
         <div
           ref={logoRef}
-          className="flex justify-center items-center fixed top-0 left-0 w-full h-full opacity-0"
+          className="flex justify-center items-center fixed top-0 left-0 w-full h-full opacity-0 -z-10"
         >
           {/* Twenty one pillots svg logo */}
           <svg

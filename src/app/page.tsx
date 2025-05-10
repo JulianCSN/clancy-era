@@ -1,12 +1,13 @@
 "use client";
 
-import {useEffect, useRef} from "react";
+import {use, useEffect, useRef} from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 
 import IntroLogo from "@/components/IntroLogo";
+import ClancyTape from "@/components/ClancyTape";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,8 +46,10 @@ export default function Home() {
 
   return (
     <>
+      <ClancyTape repeat={50} position="left" />
+      <ClancyTape repeat={50} position="right" />
       <IntroLogo />
-      <div style={{height: "200vh"}}>
+      <div style={{height: "400vh"}}>
         <div className="flex flex-col items-center justify-center px-10">
           <Image
             src="/images/clancyVerticalRed.webp"
