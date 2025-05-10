@@ -50,7 +50,7 @@ export default function ClancyTape({repeat = 10, position}: Props) {
         id={`clancy-tape-${position}`}
         className={`fixed top-0 ${
           position === "left" ? "left-0" : "right-0"
-        } bg-black p-1 md:p-2 space-y-0.5 md:space-y-2`}
+        } bg-black p-1 md:p-2 space-y-0.5 md:space-y-2 will-change-transform`}
       >
         {Array.from({length: repeat}).map((_, i) => (
           <Image

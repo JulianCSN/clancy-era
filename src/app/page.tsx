@@ -54,10 +54,11 @@ export default function Home() {
           <Image
             src="/images/clancyVerticalRed.webp"
             alt="Clancy Text"
-            width={80}
-            height={80}
+            width={150}
+            height={150}
             priority
             quality={100}
+            className="w-12 md:w-20"
           />
         </div>
       </div>
