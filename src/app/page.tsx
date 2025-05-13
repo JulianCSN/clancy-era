@@ -50,15 +50,35 @@ export default function Home() {
       <ClancyTape repeat={50} position="right" />
       <IntroLogo />
       <div style={{height: "400vh"}}>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center px-10">
-          <div>
-            <h1 className="text-3xl md:text-7xl text-center text-yellow">
-              WELCOME TO THE
-            </h1>
-            <h1 className="text-3xl md:text-7xl text-center text-red">
-              CLANCY ERA
-            </h1>
-          </div>
+        <div className="flex flex-col items-center justify-center mb-20 lg:mb-44">
+          <Image
+            src="/images/ClancyTitle.png"
+            alt="background-clancy"
+            width={1500}
+            height={1500}
+            quality={100}
+            className="w-[35vh] sm:w-[50vh] md:w-[60vh] xl:w-[90vh]"
+          />
+        </div>
+        <div className="relative w-full h-[70vh] sm:h-[120vh]">
+          {/* Backround image */}
+          <Image
+            src="/images/backgroundFire.jpg"
+            alt="background-clancy"
+            width={2400}
+            height={1516}
+            quality={100}
+            className="w-full h-full object-cover"
+          />
+          {/* Tyler and Josh Clancy Cover */}
+          <Image
+            src="/images/clancyboys.png"
+            alt="Tyler and josh clancy cover"
+            width={2400}
+            height={1516}
+            quality={100}
+            className="absolute bottom-0 right-0 w-[120vh]"
+          />
         </div>
       </div>
     </>
