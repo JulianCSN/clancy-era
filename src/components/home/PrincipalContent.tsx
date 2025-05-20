@@ -52,6 +52,38 @@ export default function PrincipalContent() {
       <IntroLogo />
       <div style={{height: "400vh"}}>
         <InitAlbumCover />
+        <div className="mt-20 px-20 flex items-start justify-center gap-10 overflow-hidden">
+          <div className="flex flex-col items-star max-w-[600px]">
+            <h2 className="text-yellow text-6xl">I AM TRAPPED.</h2>
+            <h3 className="text-red text-4xl mt-5">
+              Stuck in a cycle I have never been able to break.
+            </h3>
+            <h4 className="text-white text-2xl mt-5 mb-16">
+              I want to believe this is the last time, but I don't know for
+              sure...
+            </h4>
+            <div>
+              <Image
+                src="/images/gallery4.jpg"
+                alt="Clancy Title"
+                width={4000}
+                height={4000}
+                quality={100}
+                className="w-full h-[800px] object-cover min-w-[200px] filter grayscale"
+              />
+            </div>
+          </div>
+          <div>
+            <Image
+              src="/images/gallery3.jpg_large"
+              alt="Clancy Title"
+              width={4000}
+              height={4000}
+              quality={100}
+              className="w-[700px] h-[800px] object-cover min-w-[200px] filter grayscale"
+            />
+          </div>
+        </div>
       </div>
     </>
   );
