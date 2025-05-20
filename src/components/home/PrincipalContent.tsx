@@ -54,13 +54,18 @@ export default function PrincipalContent() {
         <InitAlbumCover />
         <div className="mt-5 md:mt-28 px-10 md:px-20 flex flex-col md:flex-row items-start justify-center gap-10 overflow-hidden">
           <div className="flex flex-col items-star max-w-full md:max-w-[600px]">
-            <h2 className="text-yellow text-5xl md:text-6xl">I AM TRAPPED.</h2>
-            <h3 className="text-red text-4xl mt-5">
-              Stuck in a cycle I have never been able to break.
-            </h3>
-            <h4 className="text-red text-2xl mt-5 mb-8 md:mb-16">
-              I want to believe this is the last time, but I don't know for
-              sure...
+            <h2 className="text-yellow text-4xl md:text-6xl">
+              OVERTAKE YOUR FORMER SELF.
+            </h2>
+            {/* <h3 className="text-red text-4xl mt-5">
+              In a world divided between control and freedom, Clancy is the
+              voice that cries out from within.
+            </h3> */}
+            <h4 className="text-red text-xl md:text-2xl mt-5 mb-8 md:mb-10">
+              In a world divided between control and freedom, Clancy is the
+              voice that cries out from within. Here you'll find images, lyrics,
+              and sounds that tell the journey of a soul that refuses to give
+              in...
             </h4>
             <Image
               src="/images/gallery5.png"

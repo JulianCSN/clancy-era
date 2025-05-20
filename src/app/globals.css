@@ -18,6 +18,12 @@ body {
   background-color: var(--color-dark);
 }
 
+/* Color for select text */
+::selection {
+  background-color: #e63025; /* rojo claro */
+  color: white;
+}
+
 /* -------------------------------------------------------------  01. Album cover Parallax */
 .album-container {
   position: relative;
