@@ -33,7 +33,7 @@ export default function InitAlbumCover() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:mb-80">
+      <div className="flex flex-col items-center justify-center lg:mb-52">
         <Image
           src="/images/ClancyTitle.png"
           alt="background-clancy"
