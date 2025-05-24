@@ -10,6 +10,7 @@ import IntroLogo from "@/components/IntroLogo";
 import ClancyTape from "@/components/ClancyTape";
 import InitAlbumCover from "@/components/InitAlbumCover";
 import IntroImages from "../IntroImages";
+import TrainText from "../TrainText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,6 +55,8 @@ export default function PrincipalContent() {
       <InitAlbumCover />
       <div style={{height: "400vh"}}>
         <IntroImages />
+        <TrainText />
+        {/* ---------------------------------------------------- */}
       </div>
     </>
   );
