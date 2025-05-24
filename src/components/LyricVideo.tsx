@@ -179,7 +179,7 @@ export default function LyricVideo({
               height={4000}
               quality={80}
               id="image-video-2"
-              className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] md:mt-0"
+              className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-20 md:mt-0"
               priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
             />
           </div>
