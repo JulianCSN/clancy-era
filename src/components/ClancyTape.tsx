@@ -15,33 +15,33 @@ export default function ClancyTape({repeat = 10, position}: Props) {
     const tapeLeft = document.getElementById("clancy-tape-left");
     const tapeRight = document.getElementById("clancy-tape-right");
 
-    if (tapeLeft) {
-      gsap.to(tapeLeft, {
-        x: 0,
-        y: -800,
-        ease: "none",
-        scrollTrigger: {
-          trigger: tapeLeft,
-          start: "top top", // Puedes ajustar esto
-          end: "bottom top",
-          scrub: 0.1,
-        },
-      });
-    }
+    // if (tapeLeft) {
+    //   gsap.to(tapeLeft, {
+    //     x: 0,
+    //     y: -800,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: tapeLeft,
+    //       start: "top top",
+    //       end: "bottom top",
+    //       scrub: 0.1,
+    //     },
+    //   });
+    // }
 
-    if (tapeRight) {
-      gsap.to(tapeRight, {
-        x: 0,
-        y: -800,
-        ease: "none",
-        scrollTrigger: {
-          trigger: tapeRight,
-          start: "top top", // Puedes ajustar esto
-          end: "bottom top",
-          scrub: 0.1,
-        },
-      });
-    }
+    // if (tapeRight) {
+    //   gsap.to(tapeRight, {
+    //     x: 0,
+    //     y: -800,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: tapeRight,
+    //       start: "top top",
+    //       end: "bottom top",
+    //       scrub: 0.1,
+    //     },
+    //   });
+    // }
   }, []);
 
   return (
