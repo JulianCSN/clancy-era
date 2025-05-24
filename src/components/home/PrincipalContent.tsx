@@ -61,12 +61,16 @@ export default function PrincipalContent() {
           video="/videos/overcompensate-cut.mp4"
           title="/images/overcompensateTitle.png"
           lyrics="/images/overcompensateLyrics.png"
+          image1="/images/gallery9.jpg"
+          image2="/images/gallery2.jpg"
         />
         <div className="h-[200px]" />
         <LyricVideo
           video="/videos/nextsemester-cut.mp4"
           title="/images/nextsemesterTitle.png"
           lyrics="/images/nextsemesterLyrics.png"
+          image1="/images/gallery15.jpg"
+          image2="/images/gallery17.jpg"
         />
       </div>
     </>

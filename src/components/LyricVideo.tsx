@@ -12,14 +12,25 @@ interface Props {
   video: string;
   title: string;
   lyrics: string;
+  image1: string;
+  image2: string;
 }
 
-export default function LyricVideo({video, title, lyrics}: Props) {
+export default function LyricVideo({
+  video,
+  title,
+  lyrics,
+  image1,
+  image2,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const [showVideo, setShowVideo] = useState(false); // Montaje en el DOM
   const [isVisible, setIsVisible] = useState(false); // Visibilidad (opacidad)
+
+  const image1Ref = useRef<HTMLImageElement>(null);
+  const image2Ref = useRef<HTMLImageElement>(null);
 
   // Mostrar / ocultar video según scroll
   useEffect(() => {
@@ -72,12 +83,12 @@ export default function LyricVideo({video, title, lyrics}: Props) {
   // Animaciones de movimiento imagenes
   useEffect(() => {
     gsap.fromTo(
-      "#image-video-1",
+      image1Ref.current,
       {y: 0},
       {
         y: -50,
         scrollTrigger: {
-          trigger: "#image-video-1",
+          trigger: image1Ref.current,
           start: "top 150%",
           end: "top -20%",
           scrub: 0.5,
@@ -86,14 +97,14 @@ export default function LyricVideo({video, title, lyrics}: Props) {
     );
 
     gsap.fromTo(
-      "#image-video-2",
+      image2Ref.current,
       {y: 0},
       {
-        y: 80,
+        y: 30,
         scrollTrigger: {
-          trigger: "#image-video-2",
-          start: "top 150%",
-          end: "top -20%",
+          trigger: image2Ref.current,
+          start: "top 200%",
+          end: "top -30%",
           scrub: 0.5,
         },
       }
@@ -139,7 +150,8 @@ export default function LyricVideo({video, title, lyrics}: Props) {
       <div className="mt-5 md:mt-28 px-10 md:px-20 flex flex-col md:flex-row items-start justify-center gap-10 overflow-hidden">
         <div className="flex flex-col items-star max-w-full md:max-w-[600px]">
           <Image
-            src="/images/gallery9.jpg"
+            ref={image1Ref}
+            src={image1}
             alt="Clancy Image 1"
             width={4000}
             height={4000}
@@ -151,13 +163,14 @@ export default function LyricVideo({video, title, lyrics}: Props) {
         </div>
         <div>
           <Image
-            src="/images/gallery2.jpg"
+            ref={image2Ref}
+            src={image2}
             alt="Clancy Image 2"
             width={4000}
             height={4000}
             quality={80}
             id="image-video-2"
-            className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-24 md:mt-0"
+            className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-20 md:mt-0"
             priority
           />
         </div>
