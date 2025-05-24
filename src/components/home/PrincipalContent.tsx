@@ -15,6 +15,29 @@ import LyricVideo from "../LyricVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const lirycVideos = [
+  {
+    video: "/videos/overcompensate-cut.mp4",
+    title: "/images/overcompensateTitle.png",
+    lyrics: "/images/overcompensateLyrics.png",
+    image1: "/images/gallery9.jpg",
+    image2: "/images/gallery2.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=53tgVlXBZVg",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1LAlLBTGBUO0MDA8IbSysd?si=bec539fa2acf451a",
+  },
+  {
+    video: "/videos/nextsemester-cut.mp4",
+    title: "/images/nextsemesterTitle.png",
+    lyrics: "/images/nextsemesterLyrics.png",
+    image1: "/images/gallery15.jpg",
+    image2: "/images/gallery13.webp",
+    linkYoutube: "https://youtu.be/a5i-KdUQ47o?si=b1Ty804e8wrT63ip",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
+  },
+];
+
 export default function PrincipalContent() {
   // Change smoothly the background color, white to black
   useEffect(() => {
@@ -57,21 +80,20 @@ export default function PrincipalContent() {
       <div style={{height: "8000vh"}}>
         <IntroImages />
         <TrainText />
-        <LyricVideo
-          video="/videos/overcompensate-cut.mp4"
-          title="/images/overcompensateTitle.png"
-          lyrics="/images/overcompensateLyrics.png"
-          image1="/images/gallery9.jpg"
-          image2="/images/gallery2.jpg"
-        />
-        <div className="h-[200px]" />
-        <LyricVideo
-          video="/videos/nextsemester-cut.mp4"
-          title="/images/nextsemesterTitle.png"
-          lyrics="/images/nextsemesterLyrics.png"
-          image1="/images/gallery15.jpg"
-          image2="/images/gallery17.jpg"
-        />
+        {lirycVideos.map((video, index) => {
+          return (
+            <LyricVideo
+              key={index}
+              video={video.video}
+              title={video.title}
+              lyrics={video.lyrics}
+              image1={video.image1}
+              image2={video.image2}
+              linkYoutube={video.linkYoutube}
+              linkSpotify={video.linkSpotify}
+            />
+          );
+        })}
       </div>
     </>
   );

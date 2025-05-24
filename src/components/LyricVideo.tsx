@@ -14,6 +14,8 @@ interface Props {
   lyrics: string;
   image1: string;
   image2: string;
+  linkYoutube: string;
+  linkSpotify: string;
 }
 
 export default function LyricVideo({
@@ -22,17 +24,19 @@ export default function LyricVideo({
   lyrics,
   image1,
   image2,
+  linkYoutube,
+  linkSpotify,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const [showVideo, setShowVideo] = useState(false); // Montaje en el DOM
-  const [isVisible, setIsVisible] = useState(false); // Visibilidad (opacidad)
+  const [showVideo, setShowVideo] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const image1Ref = useRef<HTMLImageElement>(null);
   const image2Ref = useRef<HTMLImageElement>(null);
 
-  // Mostrar / ocultar video según scroll
+  // Show / hide video according to scroll
   useEffect(() => {
     if (!containerRef.current) return;
 
@@ -59,7 +63,7 @@ export default function LyricVideo({
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
 
-  // Fade in/out animado con GSAP
+  // Fade effect
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
@@ -70,7 +74,7 @@ export default function LyricVideo({
       ease: "power2.out",
     });
 
-    // Si se está ocultando, desmontar después del fade
+    //  If hiding, unmount after fade
     if (!isVisible) {
       const timeout = setTimeout(() => setShowVideo(false), 1000); // mismo tiempo que duration
 
@@ -80,7 +84,7 @@ export default function LyricVideo({
     return () => fade.kill();
   }, [isVisible]);
 
-  // Animaciones de movimiento imagenes
+  // Animate images movement
   useEffect(() => {
     gsap.fromTo(
       image1Ref.current,
@@ -112,83 +116,95 @@ export default function LyricVideo({
   }, []);
 
   return (
-    <div ref={containerRef}>
-      <div id="init-video"></div>
-      <div className="h-[20vh]" />
-      {/* Renderizado condicional del video */}
-      {showVideo && (
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          className="fixed top-0 left-0 w-full h-full object-cover z-[-1] opacity-0 pointer-events-none"
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-      )}
-
-      <div className="flex flex-col items-center justify-center">
-        <Image
-          src={title}
-          alt="Overcompensate title"
-          width={1500}
-          height={1500}
-          quality={100}
-          className="w-[200vh] mt-64 md:mt-0"
-        />
-        <Image
-          src={lyrics}
-          alt="Overcompensate title2"
-          width={1500}
-          height={1500}
-          quality={100}
-          className="w-[40vh] sm:w-[60vh] xl:w-[100vh] mt-0 md:-mt-20"
-        />
-      </div>
-
-      <div className="mt-5 md:mt-28 px-10 md:px-20 flex flex-col md:flex-row items-start justify-center gap-10 overflow-hidden">
-        <div className="flex flex-col items-star max-w-full md:max-w-[600px]">
-          <Image
-            ref={image1Ref}
-            src={image1}
-            alt="Clancy Image 1"
-            width={4000}
-            height={4000}
-            quality={80}
-            id="image-video-1"
-            className="w-full h-[400px] md:h-[790px] object-cover min-w-[100px] mt-20 md:-mt-0"
-            priority
-          />
-        </div>
-        <div>
-          <Image
-            ref={image2Ref}
-            src={image2}
-            alt="Clancy Image 2"
-            width={4000}
-            height={4000}
-            quality={80}
-            id="image-video-2"
-            className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-20 md:mt-0"
-            priority
-          />
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center mt-12 md:mt-26">
-        <div className="flex gap-10">
-          <a href="https://www.youtube.com/watch?v=53tgVlXBZVg" target="_blank">
-            <FaYoutube className="text-red text-5xl md:text-7xl" />
-          </a>
-          <a
-            href="https://open.spotify.com/intl-es/album/5ZSqGFLuXUJUlIObSkN0Bz?trackId=0ZucyPms79Cydv0RMYV2Oi"
-            target="_blank"
+    <>
+      <div ref={containerRef}>
+        <div id="init-video"></div>
+        <div className="h-[20vh]" />
+        {/* Render conditional video */}
+        {showVideo && (
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            className="fixed top-0 left-0 w-full h-full object-cover z-[-1] opacity-0 pointer-events-none"
           >
-            <FaSpotify className="text-red text-5xl md:text-7xl" />
-          </a>
+            <source src={video} type="video/mp4" />
+          </video>
+        )}
+
+        {/* Title and lyrics */}
+        <div className="flex flex-col items-center justify-center">
+          <Image
+            src={title}
+            alt="Overcompensate title"
+            width={1500}
+            height={1500}
+            quality={100}
+            className="w-[200vh] mt-64 md:mt-0"
+          />
+          <Image
+            src={lyrics}
+            alt="Overcompensate title2"
+            width={1500}
+            height={1500}
+            quality={100}
+            className="w-[40vh] sm:w-[60vh] xl:w-[100vh] mt-0 md:-mt-20"
+          />
         </div>
+
+        {/* Two Images */}
+        <div className="mt-5 md:mt-28 px-10 md:px-20 flex flex-col md:flex-row items-start justify-center gap-10 overflow-hidden">
+          <div className="flex flex-col items-star max-w-full md:max-w-[600px]">
+            <Image
+              ref={image1Ref}
+              src={image1}
+              alt="Clancy Image 1"
+              width={4000}
+              height={4000}
+              quality={80}
+              id="image-video-1"
+              className="w-[800px] h-[400px] md:h-[790px] object-cover min-w-[100px] mt-20 md:-mt-0"
+              priority
+            />
+          </div>
+          <div>
+            <Image
+              ref={image2Ref}
+              src={image2}
+              alt="Clancy Image 2"
+              width={4000}
+              height={4000}
+              quality={80}
+              id="image-video-2"
+              className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-20 md:mt-0"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Social media links */}
+        <div className="flex flex-col items-center justify-center mt-12 md:mt-26">
+          <div className="flex gap-10">
+            <a
+              href={linkYoutube}
+              target="_blank"
+              className="duration-300 hover:scale-110"
+            >
+              <FaYoutube className="text-red text-5xl md:text-7xl" />
+            </a>
+            <a
+              href={linkSpotify}
+              target="_blank"
+              className="duration-300 hover:scale-110"
+            >
+              <FaSpotify className="text-red text-5xl md:text-7xl scale-90" />
+            </a>
+          </div>
+        </div>
+        <div id="end-video" className="h-[50vh] w-full" />
       </div>
-      <div id="end-video" className="h-[50vh] w-full" />
-    </div>
+      <div className="h-[200px]" />
+    </>
   );
 }
