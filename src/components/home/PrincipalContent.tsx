@@ -11,6 +11,7 @@ import ClancyTape from "@/components/ClancyTape";
 import InitAlbumCover from "@/components/InitAlbumCover";
 import IntroImages from "../IntroImages";
 import TrainText from "../TrainText";
+import LyricVideo from "../LyricVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,10 +54,12 @@ export default function PrincipalContent() {
       <ClancyTape repeat={50} position="right" />
       <IntroLogo />
       <InitAlbumCover />
-      <div style={{height: "400vh"}}>
+      <div style={{height: "8000vh"}}>
         <IntroImages />
         <TrainText />
-        {/* ---------------------------------------------------- */}
+        <LyricVideo video="/videos/overcompensate-cut.mp4" />
+        <div className="h-[200px]" />
+        <LyricVideo video="/videos/nextsemester-cut.mp4" />
       </div>
     </>
   );
