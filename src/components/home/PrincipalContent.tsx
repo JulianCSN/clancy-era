@@ -35,6 +35,76 @@ const lirycVideos = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
   },
+  {
+    video: "/videos/backslide-cut.mp4",
+    title: "/images/backslideTitle.png",
+    lyrics: "/images/backslideLyrics.png",
+    image1: "/images/gallery20.webp",
+    image2: "/images/gallery24.jpeg",
+    linkYoutube: "https://www.youtube.com/watch?v=YAmLMohrus4",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/6fNaHkjAxP6rI2sZhT7QJn?si=326f16884d674adb",
+  },
+  {
+    video: "/videos/overcompensate-cut.mp4",
+    title: "/images/overcompensateTitle.png",
+    lyrics: "/images/overcompensateLyrics.png",
+    image1: "/images/gallery9.jpg",
+    image2: "/images/gallery2.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=53tgVlXBZVg",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1LAlLBTGBUO0MDA8IbSysd?si=bec539fa2acf451a",
+  },
+  {
+    video: "/videos/nextsemester-cut.mp4",
+    title: "/images/nextsemesterTitle.png",
+    lyrics: "/images/nextsemesterLyrics.png",
+    image1: "/images/gallery15.jpg",
+    image2: "/images/gallery19.jpg",
+    linkYoutube: "https://youtu.be/a5i-KdUQ47o?si=b1Ty804e8wrT63ip",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
+  },
+  {
+    video: "/videos/backslide-cut.mp4",
+    title: "/images/backslideTitle.png",
+    lyrics: "/images/backslideLyrics.png",
+    image1: "/images/gallery20.webp",
+    image2: "/images/gallery24.jpeg",
+    linkYoutube: "https://www.youtube.com/watch?v=YAmLMohrus4",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/6fNaHkjAxP6rI2sZhT7QJn?si=326f16884d674adb",
+  },
+  {
+    video: "/videos/overcompensate-cut.mp4",
+    title: "/images/overcompensateTitle.png",
+    lyrics: "/images/overcompensateLyrics.png",
+    image1: "/images/gallery9.jpg",
+    image2: "/images/gallery2.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=53tgVlXBZVg",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1LAlLBTGBUO0MDA8IbSysd?si=bec539fa2acf451a",
+  },
+  {
+    video: "/videos/nextsemester-cut.mp4",
+    title: "/images/nextsemesterTitle.png",
+    lyrics: "/images/nextsemesterLyrics.png",
+    image1: "/images/gallery15.jpg",
+    image2: "/images/gallery19.jpg",
+    linkYoutube: "https://youtu.be/a5i-KdUQ47o?si=b1Ty804e8wrT63ip",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
+  },
+  {
+    video: "/videos/backslide-cut.mp4",
+    title: "/images/backslideTitle.png",
+    lyrics: "/images/backslideLyrics.png",
+    image1: "/images/gallery20.webp",
+    image2: "/images/gallery24.jpeg",
+    linkYoutube: "https://www.youtube.com/watch?v=YAmLMohrus4",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/6fNaHkjAxP6rI2sZhT7QJn?si=326f16884d674adb",
+  },
 ];
 
 export default function PrincipalContent() {
@@ -81,16 +151,17 @@ export default function PrincipalContent() {
         <TrainText />
         {lirycVideos.map((video, index) => {
           return (
-            <LyricVideo
-              key={index}
-              video={video.video}
-              title={video.title}
-              lyrics={video.lyrics}
-              image1={video.image1}
-              image2={video.image2}
-              linkYoutube={video.linkYoutube}
-              linkSpotify={video.linkSpotify}
-            />
+            <div key={index}>
+              <LyricVideo
+                video={video.video}
+                title={video.title}
+                lyrics={video.lyrics}
+                image1={video.image1}
+                image2={video.image2}
+                linkYoutube={video.linkYoutube}
+                linkSpotify={video.linkSpotify}
+              />
+            </div>
           );
         })}
       </div>

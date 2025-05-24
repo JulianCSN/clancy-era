@@ -32,6 +32,7 @@ export default function LyricVideo({
 
   const [showVideo, setShowVideo] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const titleRef = useRef<HTMLImageElement>(null);
 
   const image1Ref = useRef<HTMLImageElement>(null);
   const image2Ref = useRef<HTMLImageElement>(null);
@@ -40,10 +41,11 @@ export default function LyricVideo({
   useEffect(() => {
     if (!containerRef.current) return;
 
-    ScrollTrigger.create({
+    const trigger = ScrollTrigger.create({
       trigger: containerRef.current,
       start: "top 50%",
-      end: "bottom 0%",
+      end: "bottom -420%",
+      // markers: true,
       onEnter: () => {
         setShowVideo(true);
         setIsVisible(true);
@@ -60,7 +62,7 @@ export default function LyricVideo({
       },
     });
 
-    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+    return () => trigger.kill();
   }, []);
 
   // Fade effect
@@ -117,9 +119,8 @@ export default function LyricVideo({
 
   return (
     <>
-      <div ref={containerRef}>
-        <div id="init-video"></div>
-        <div className="h-[20vh]" />
+      <div>
+        <div ref={containerRef} className="h-0 md:h-[20vh]" />
         {/* Render conditional video */}
         {showVideo && (
           <video
@@ -136,20 +137,21 @@ export default function LyricVideo({
         {/* Title and lyrics */}
         <div className="flex flex-col items-center justify-center">
           <Image
+            ref={titleRef}
             src={title}
             alt="Overcompensate title"
             width={1500}
             height={1500}
-            quality={100}
             className="w-[200vh] mt-64 md:mt-0"
+            priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
           />
           <Image
             src={lyrics}
             alt="Overcompensate title2"
             width={1500}
             height={1500}
-            quality={100}
             className="w-[40vh] sm:w-[60vh] xl:w-[100vh] mt-0 md:-mt-20"
+            priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
           />
         </div>
 
@@ -164,8 +166,8 @@ export default function LyricVideo({
               height={4000}
               quality={80}
               id="image-video-1"
-              className="w-[800px] h-[400px] md:h-[790px] object-cover min-w-[100px] mt-20 md:-mt-0"
-              priority
+              className="w-[800px] h-[400px] md:h-[790px] object-cover min-w-[100px] md:-mt-0"
+              priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
             />
           </div>
           <div>
@@ -177,8 +179,8 @@ export default function LyricVideo({
               height={4000}
               quality={80}
               id="image-video-2"
-              className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] -mt-20 md:mt-0"
-              priority
+              className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] md:mt-0"
+              priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
             />
           </div>
         </div>
