@@ -57,9 +57,17 @@ export default function PrincipalContent() {
       <div style={{height: "8000vh"}}>
         <IntroImages />
         <TrainText />
-        <LyricVideo video="/videos/overcompensate-cut.mp4" />
+        <LyricVideo
+          video="/videos/overcompensate-cut.mp4"
+          title="/images/overcompensateTitle.png"
+          lyrics="/images/overcompensateLyrics.png"
+        />
         <div className="h-[200px]" />
-        <LyricVideo video="/videos/nextsemester-cut.mp4" />
+        <LyricVideo
+          video="/videos/nextsemester-cut.mp4"
+          title="/images/nextsemesterTitle.png"
+          lyrics="/images/nextsemesterLyrics.png"
+        />
       </div>
     </>
   );

@@ -10,9 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface Props {
   video: string;
+  title: string;
+  lyrics: string;
 }
 
-export default function LyricVideo({video}: Props) {
+export default function LyricVideo({video, title, lyrics}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -117,7 +119,7 @@ export default function LyricVideo({video}: Props) {
 
       <div className="flex flex-col items-center justify-center">
         <Image
-          src="/images/overcompensateTitle.png"
+          src={title}
           alt="Overcompensate title"
           width={1500}
           height={1500}
@@ -125,7 +127,7 @@ export default function LyricVideo({video}: Props) {
           className="w-[200vh] mt-64 md:mt-0"
         />
         <Image
-          src="/images/overcompensateLyrics.png"
+          src={lyrics}
           alt="Overcompensate title2"
           width={1500}
           height={1500}
