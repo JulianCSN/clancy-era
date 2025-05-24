@@ -1,7 +1,6 @@
 "use client";
 
-import {use, useEffect, useRef} from "react";
-import Image from "next/image";
+import {useEffect} from "react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Lenis from "lenis";
