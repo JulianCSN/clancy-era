@@ -31,7 +31,7 @@ const lirycVideos = [
     title: "/images/nextsemesterTitle.png",
     lyrics: "/images/nextsemesterLyrics.png",
     image1: "/images/gallery15.jpg",
-    image2: "/images/gallery13.webp",
+    image2: "/images/gallery19.jpg",
     linkYoutube: "https://youtu.be/a5i-KdUQ47o?si=b1Ty804e8wrT63ip",
     linkSpotify:
       "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
