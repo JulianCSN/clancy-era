@@ -2,12 +2,27 @@ import React, {useEffect, useRef, useState} from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {FaChevronDown} from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function IntroLogo() {
   const logoRef = useRef<HTMLDivElement>(null);
   const [showLogo, setShowLogo] = useState(true);
+  const [showDownIcon, setShowDownIcon] = useState(true);
+
+  // Show down icon when the scroll is on the top of the screen
+  useEffect(() => {
+    const handleScroll = () => {
+      const isTop = window.scrollY <= 1;
+      setShowDownIcon(isTop);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Mount and unmoint logo according to scroll
   useEffect(() => {
@@ -23,6 +38,25 @@ export default function IntroLogo() {
         } else if (scrollY <= 980) {
           setShowLogo(true);
         }
+      },
+    });
+
+    // Appear down icon in 3 seconds and disappear when scroll is at least 1px
+    gsap.fromTo(
+      "#downIcon",
+      {opacity: 0, y: 10},
+      {opacity: 1, y: 0, duration: 1, delay: 3, ease: "power2.out"}
+    );
+
+    // Disappear down icon
+    ScrollTrigger.create({
+      start: 1, // Trigger when the user scrolls down 1 pixel
+      onEnter: () => {
+        gsap.to("#downIcon", {
+          opacity: 0,
+          duration: 0.1,
+          ease: "power2.out",
+        });
       },
     });
   }, []);
@@ -82,7 +116,7 @@ export default function IntroLogo() {
       {showLogo && (
         <div
           ref={logoRef}
-          className="flex justify-center items-center fixed top-0 left-0 w-full h-full opacity-0 -z-10"
+          className="flex flex-col justify-center items-center fixed top-0 left-0 w-full h-full opacity-0 -z-10"
         >
           {/* Twenty one pillots svg logo */}
           <svg
@@ -109,6 +143,12 @@ export default function IntroLogo() {
               fill="#e63025"
             />
           </svg>
+          {showDownIcon && (
+            <FaChevronDown
+              id="downIcon"
+              className="fixed text-red text-2xl bottom-20 animate-bounce"
+            />
+          )}
         </div>
       )}
       <div style={{height: "220vh"}}></div>
