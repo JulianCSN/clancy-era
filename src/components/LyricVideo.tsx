@@ -101,7 +101,7 @@ export default function LyricVideo({video}: Props) {
   return (
     <div ref={containerRef}>
       <div id="init-video"></div>
-      <div className="h-[30vh]" />
+      <div className="h-[20vh]" />
       {/* Renderizado condicional del video */}
       {showVideo && (
         <video
