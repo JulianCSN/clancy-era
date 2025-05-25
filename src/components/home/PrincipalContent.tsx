@@ -114,6 +114,17 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/49oxuPnuWOL793zpF6zgLQ?si=04278e0988864498",
   },
+  {
+    video: "/videos/navigating-cut.mp4",
+    title: "/images/navigatingTitle.png",
+    lyrics: "/images/navigatingLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery41.jpg",
+    image2: "/images/gallery42.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=07YtBj3BEBQ",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/3gy21TwRSP40aUMwcY7Rtq?si=07ccaa3102d8493c",
+  },
 ];
 
 export default function PrincipalContent() {
