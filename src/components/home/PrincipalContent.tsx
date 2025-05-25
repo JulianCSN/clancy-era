@@ -103,6 +103,17 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/0S7lkKStHgfgjgwSFOvRNA?si=63363d4b77f34474",
   },
+  {
+    video: "/videos/lavish-cut.mp4",
+    title: "/images/lavishTitle.png",
+    lyrics: "/images/lavishLyrics.png",
+    lyricBackground: "white",
+    image1: "/images/gallery38.jpg",
+    image2: "/images/gallery39.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=flYgpeWsC2E",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/49oxuPnuWOL793zpF6zgLQ?si=04278e0988864498",
+  },
 ];
 
 export default function PrincipalContent() {
