@@ -12,6 +12,7 @@ interface Props {
   video: string;
   title: string;
   lyrics: string;
+  lyricBackground: "black" | "white";
   image1: string;
   image2: string;
   linkYoutube: string;
@@ -22,6 +23,7 @@ export default function LyricVideo({
   video,
   title,
   lyrics,
+  lyricBackground,
   image1,
   image2,
   linkYoutube,
@@ -150,7 +152,11 @@ export default function LyricVideo({
             alt="Overcompensate title2"
             width={1500}
             height={1500}
-            className="w-[40vh] sm:w-[60vh] xl:w-[100vh] mt-0 md:-mt-20"
+            className={`w-[40vh] sm:w-[60vh] ${
+              lyricBackground === "white"
+                ? " md:w-[70vh] lg:w-[90vh] xl:w-[115vh] bg-white/40"
+                : "xl:w-[100vh] bg-black/40"
+            } mt-0 md:-mt-10 p-5 xl:p-10 backdrop-blur-sm`}
             priority // NOTE: Its important to set priority to true on Next Images because the scrollTriggers need to be created after the images are fully loaded
           />
         </div>
