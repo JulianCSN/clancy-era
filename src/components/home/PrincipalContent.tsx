@@ -125,6 +125,17 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/3gy21TwRSP40aUMwcY7Rtq?si=07ccaa3102d8493c",
   },
+  {
+    video: "/videos/snapback-cut.mp4",
+    title: "/images/snapbackTitle.png",
+    lyrics: "/images/snapbackLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery44.jpg",
+    image2: "/images/gallery46.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=eZptwvjKjk4",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/5QPGnFslbDUQ7mDteKn3By?si=d63c5fd42b8f42bf",
+  },
 ];
 
 export default function PrincipalContent() {
