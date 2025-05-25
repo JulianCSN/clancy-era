@@ -81,6 +81,17 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/4bDIAWaOBGAAk95nyXI6zJ?si=a9bb56a02278401f",
   },
+  {
+    video: "/videos/vignette-cut.mp4",
+    title: "/images/vignetteTitle.png",
+    lyrics: "/images/vignetteLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery30.jpg",
+    image2: "/images/gallery31.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=eoEKwwbPfvc",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/3sEufjE0ITaW5qhtnW3avv?si=3e9a357272224b16",
+  },
 ];
 
 export default function PrincipalContent() {
