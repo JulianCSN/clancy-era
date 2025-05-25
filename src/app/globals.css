@@ -24,6 +24,11 @@ body {
   color: white;
 }
 
+.noscroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
 /* -------------------------------------------------------------  01. Album cover Parallax */
 .album-container {
   position: relative;

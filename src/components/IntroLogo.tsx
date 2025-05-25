@@ -1,5 +1,4 @@
 import React, {useEffect, useRef, useState} from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {FaChevronDown} from "react-icons/fa6";

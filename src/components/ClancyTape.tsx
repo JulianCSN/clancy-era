@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -11,39 +11,6 @@ interface Props {
 }
 
 export default function ClancyTape({repeat = 10, position}: Props) {
-  useEffect(() => {
-    const tapeLeft = document.getElementById("clancy-tape-left");
-    const tapeRight = document.getElementById("clancy-tape-right");
-
-    // if (tapeLeft) {
-    //   gsap.to(tapeLeft, {
-    //     x: 0,
-    //     y: -800,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: tapeLeft,
-    //       start: "top top",
-    //       end: "bottom top",
-    //       scrub: 0.1,
-    //     },
-    //   });
-    // }
-
-    // if (tapeRight) {
-    //   gsap.to(tapeRight, {
-    //     x: 0,
-    //     y: -800,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: tapeRight,
-    //       start: "top top",
-    //       end: "bottom top",
-    //       scrub: 0.1,
-    //     },
-    //   });
-    // }
-  }, []);
-
   return (
     <div className="relative">
       <div

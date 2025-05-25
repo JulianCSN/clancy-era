@@ -92,8 +92,8 @@ export default function IntroImages() {
           className="text-red text-xl md:text-2xl mt-5 mb-2 md:mb-5 opacity-0"
         >
           In a world divided between control and freedom, Clancy is the voice
-          that cries out from within. Here you will find images, lyrics, and
-          sounds that trace the journey of a soul that refuses to give in.
+          that cries out from within. Here you will find the lyrics that trace
+          the journey of a soul that refuses to give in.
         </h4>
         <Image
           src="/images/gallery5.png"
@@ -114,7 +114,7 @@ export default function IntroImages() {
           height={2000}
           quality={80}
           id="image-circle-intro"
-          className="absolute -z-1 w-[200px] md:w-[450px] bottom-[150px] left-[32px] 2xl:-bottom-[180px] 2xl:left-[440px] block sm:hidden 2xl:block"
+          className="absolute -z-1 w-[200px] md:w-[450px] bottom-[150px] left-[32px] 2xl:-bottom-[180px] 2xl:left-[440px] block sm:hidden 2xl:block opacity-50"
         />
         <Image
           src="/images/gallery8.jpg"
