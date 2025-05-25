@@ -92,6 +92,17 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/3sEufjE0ITaW5qhtnW3avv?si=3e9a357272224b16",
   },
+  {
+    video: "/videos/tc-cut.mp4",
+    title: "/images/tcTitle.png",
+    lyrics: "/images/tcLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery32.jpg",
+    image2: "/images/gallery37.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=H3OiQEOcrA8",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/0S7lkKStHgfgjgwSFOvRNA?si=63363d4b77f34474",
+  },
 ];
 
 export default function PrincipalContent() {
