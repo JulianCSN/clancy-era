@@ -136,6 +136,39 @@ const lirycVideos: lirycVideos[] = [
     linkSpotify:
       "https://open.spotify.com/intl-es/track/5QPGnFslbDUQ7mDteKn3By?si=d63c5fd42b8f42bf",
   },
+  {
+    video: "/videos/oldiesstation-cut.mp4",
+    title: "/images/oldiesstationTitle.png",
+    lyrics: "/images/oldiesstationLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery54.jpg",
+    image2: "/images/gallery48.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=fBE_2sHDt4E",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/7dI0mSvbdJTynUnEkWIom1?si=b87225eae44d4eb4",
+  },
+  {
+    video: "/videos/atrofd-cut.mp4",
+    title: "/images/atrofdTitle.png",
+    lyrics: "/images/atrofdLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery49.jpg",
+    image2: "/images/gallery50.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=TnoWOgAD054",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/0ZucyPms79Cydv0RMYV2Oi?si=644e1d3a648b4758",
+  },
+  {
+    video: "/videos/paladinstrait-cut.mp4",
+    title: "/images/paladinstraitTitleV3.png",
+    lyrics: "/images/paladinstraitLyrics.png",
+    lyricBackground: "black",
+    image1: "/images/gallery51.jpg",
+    image2: "/images/gallery52.jpg",
+    linkYoutube: "https://www.youtube.com/watch?v=mix9YfaaNa0",
+    linkSpotify:
+      "https://open.spotify.com/intl-es/track/5HvDKyJlHWg42BdsE4ycSm?si=1d00043c2a314bc7",
+  },
 ];
 
 export default function PrincipalContent() {
