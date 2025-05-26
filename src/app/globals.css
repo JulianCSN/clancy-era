@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Martian";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/MartianMono.ttf") format("truetype");
-}
-
 @theme {
   --color-dark: #231f20;
   --color-red: #e63025;
@@ -14,7 +7,6 @@
 }
 
 body {
-  font-family: Martian, Arial, Helvetica, sans-serif;
   background-color: var(--color-dark);
 }
 
