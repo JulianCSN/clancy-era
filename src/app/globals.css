@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Martian Mono";
+  font-family: "Martian";
   font-style: normal;
   font-weight: normal;
   src: url("/fonts/MartianMono.ttf") format("truetype");
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Martian Mono", Arial, Helvetica, sans-serif;
+  font-family: Martian, Arial, Helvetica, sans-serif;
   background-color: var(--color-dark);
 }
 

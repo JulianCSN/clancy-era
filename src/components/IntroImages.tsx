@@ -115,6 +115,7 @@ export default function IntroImages() {
           quality={80}
           id="image-circle-intro"
           className="absolute -z-1 w-[200px] md:w-[450px] bottom-[150px] left-[32px] 2xl:-bottom-[180px] 2xl:left-[440px] block sm:hidden 2xl:block opacity-50"
+          priority
         />
         <Image
           src="/images/gallery8.jpg"
@@ -124,6 +125,7 @@ export default function IntroImages() {
           quality={60}
           id="image-intro-2"
           className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] mt-5 md:mt-0 filter grayscale opacity-0"
+          priority
         />
       </div>
     </div>

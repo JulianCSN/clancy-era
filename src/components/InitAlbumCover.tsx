@@ -41,6 +41,7 @@ export default function InitAlbumCover() {
           height={1500}
           quality={100}
           className="w-[35vh] sm:w-[50vh] md:w-[60vh] xl:w-[90vh]"
+          priority
         />
       </div>
 
@@ -60,6 +61,7 @@ export default function InitAlbumCover() {
           className="w-full h-full object-cover will-change-transform"
           style={{zIndex: 0}}
           id="background-parallax"
+          priority
         />
 
         {/* Tyler and Josh image with parallax */}
@@ -71,6 +73,7 @@ export default function InitAlbumCover() {
           quality={100}
           className="absolute bottom-0 right-0 w-[110vh] will-change-transform"
           id="cover-parallax"
+          priority
         />
       </div>
     </>

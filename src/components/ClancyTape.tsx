@@ -17,12 +17,12 @@ export default function ClancyTape({repeat = 10, position}: Props) {
         id={`clancy-tape-${position}`}
         className={`fixed top-0 ${
           position === "left" ? "left-0" : "right-0"
-        } bg-black p-1 md:p-2 space-y-0.5 md:space-y-2 will-change-transform z-50`}
+        } bg-black p-1 md:p-2 space-y-0.5 md:space-y-2 z-50`}
       >
         {Array.from({length: repeat}).map((_, i) => (
           <Image
             key={i}
-            src="/images/clancyTapeWhite.webp"
+            src="/images/ClancyTapeWhite.webp"
             alt="Clancy Tape"
             width={100}
             height={100}

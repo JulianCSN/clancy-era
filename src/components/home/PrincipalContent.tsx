@@ -51,8 +51,8 @@ export default function PrincipalContent() {
 
   return (
     <>
-      <ClancyTape repeat={50} position="left" />
-      <ClancyTape repeat={50} position="right" />
+      <ClancyTape repeat={20} position="left" />
+      <ClancyTape repeat={20} position="right" />
       <IntroLogo />
       <InitAlbumCover />
       <IntroImages />
