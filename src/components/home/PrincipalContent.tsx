@@ -12,6 +12,7 @@ import IntroImages from "../IntroImages";
 import TrainText from "../TrainText";
 import LyricVideo from "../LyricVideo";
 import {lirycVideos} from "@/helpers/lyricVideosList.data";
+import FinalMessage from "../FinalMessage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,26 +55,25 @@ export default function PrincipalContent() {
       <ClancyTape repeat={50} position="right" />
       <IntroLogo />
       <InitAlbumCover />
-      <div style={{height: "8000vh"}}>
-        <IntroImages />
-        <TrainText />
-        {lirycVideos.map((video, index) => {
-          return (
-            <div key={index}>
-              <LyricVideo
-                video={video.video}
-                title={video.title}
-                lyrics={video.lyrics}
-                lyricBackground={video.lyricBackground}
-                image1={video.image1}
-                image2={video.image2}
-                linkYoutube={video.linkYoutube}
-                linkSpotify={video.linkSpotify}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <IntroImages />
+      <TrainText />
+      {lirycVideos.map((video, index) => {
+        return (
+          <div key={index}>
+            <LyricVideo
+              video={video.video}
+              title={video.title}
+              lyrics={video.lyrics}
+              lyricBackground={video.lyricBackground}
+              image1={video.image1}
+              image2={video.image2}
+              linkYoutube={video.linkYoutube}
+              linkSpotify={video.linkSpotify}
+            />
+          </div>
+        );
+      })}
+      <FinalMessage />
     </>
   );
 }

@@ -143,7 +143,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/0ZucyPms79Cydv0RMYV2Oi?si=644e1d3a648b4758",
   },
   {
-    video: "/videos/paladinstrait-cut.mp4",
+    video: "/videos/paladinstrait-cut-2.mp4",
     title: "/images/paladinstraitTitleV3.png",
     lyrics: "/images/paladinstraitLyrics.png",
     lyricBackground: "black",

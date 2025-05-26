@@ -141,7 +141,7 @@ export default function LyricVideo({
           <Image
             ref={titleRef}
             src={title}
-            alt="Overcompensate title"
+            alt="Song title"
             width={1500}
             height={1500}
             className="w-[200vh] mt-64 md:mt-0"
@@ -149,7 +149,7 @@ export default function LyricVideo({
           />
           <Image
             src={lyrics}
-            alt="Overcompensate title2"
+            alt="Song lyrics"
             width={1500}
             height={1500}
             className={`w-[40vh] sm:w-[60vh] ${
@@ -167,7 +167,7 @@ export default function LyricVideo({
             <Image
               ref={image1Ref}
               src={image1}
-              alt="Clancy Image 1"
+              alt="Image 1"
               width={4000}
               height={4000}
               quality={80}
@@ -180,7 +180,7 @@ export default function LyricVideo({
             <Image
               ref={image2Ref}
               src={image2}
-              alt="Clancy Image 2"
+              alt="Image 2"
               width={4000}
               height={4000}
               quality={80}
