@@ -84,10 +84,10 @@ export default function FinalMessage() {
       >
         <p className="text-white text-[8px] md:text-[10px] max-w-[75%] text-center">
           This is a fanmade page created out of admiration and respect for
-          Twenty One Pilots. We do not own any of the images, videos, or media
-          featured here. All rights belong to their respective owners. Our only
-          intention is to support, promote, and share the band&apos;s work with
-          others.
+          Twenty One Pilots. We do not own any of the images, videos, lyrics or
+          media featured here. All rights belong to their respective owners. Our
+          only intention is to support, promote, and share the band&apos;s work
+          with others.
         </p>
         <p className="text-white text-[8px] md:text-[10px] max-w-[75%] text-center mt-3">
           Created by{" "}
