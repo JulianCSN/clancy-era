@@ -148,7 +148,7 @@ export const lirycVideos: lirycVideos[] = [
     lyrics: "/images/paladinstraitLyrics.png",
     lyricBackground: "black",
     image1: "/images/gallery51.jpg",
-    image2: "/images/gallery52.jpg",
+    image2: "/images/finalGallery.jpg",
     linkYoutube: "https://www.youtube.com/watch?v=mix9YfaaNa0",
     linkSpotify:
       "https://open.spotify.com/intl-es/track/5HvDKyJlHWg42BdsE4ycSm?si=1d00043c2a314bc7",
