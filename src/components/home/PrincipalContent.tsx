@@ -1,6 +1,7 @@
 "use client";
 
 import {useEffect} from "react";
+import Head from "next/head";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Lenis from "lenis";
@@ -51,12 +52,24 @@ export default function PrincipalContent() {
 
   return (
     <>
+      <Head>
+        {lirycVideos.map((video, index) => (
+          <link
+            key={index}
+            rel="preload"
+            as="video"
+            href={video.video}
+            type="video/mp4"
+          />
+        ))}
+      </Head>
       <ClancyTape repeat={20} position="left" />
       <ClancyTape repeat={20} position="right" />
       <IntroLogo />
       <InitAlbumCover />
       <IntroImages />
       <TrainText />
+
       {lirycVideos.map((video, index) => {
         return (
           <div key={index}>

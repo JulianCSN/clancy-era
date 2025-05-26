@@ -46,7 +46,7 @@ export default function LyricVideo({
     const trigger = ScrollTrigger.create({
       trigger: containerRef.current,
       start: "top 50%",
-      end: "bottom -420%",
+      end: "bottom -550%",
       // markers: true,
       onEnter: () => {
         setShowVideo(true);
