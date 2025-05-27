@@ -96,11 +96,11 @@ export default function IntroImages() {
           the journey of a soul that refuses to give in.
         </h4>
         <Image
-          src="/images/gallery5.png"
+          src="/images/gallery5.webp"
           alt="Clancy Image 1"
           width={850}
           height={850}
-          quality={50}
+          quality={80}
           id="image-intro-1"
           className="w-full h-[400px] md:h-[790px] object-cover min-w-[100px] opacity-0"
           priority
