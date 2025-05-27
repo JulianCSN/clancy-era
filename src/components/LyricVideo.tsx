@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface Props {
   video: string;
+  videomp4: string;
   title: string;
   lyrics: string;
   lyricBackground: "black" | "white";
@@ -21,6 +22,7 @@ interface Props {
 
 export default function LyricVideo({
   video,
+  videomp4,
   title,
   lyrics,
   lyricBackground,
@@ -130,9 +132,11 @@ export default function LyricVideo({
             autoPlay
             loop
             muted
+            playsInline
             className="fixed top-0 left-0 w-full h-full object-cover z-[-1] opacity-0 pointer-events-none"
           >
-            <source src={video} type="video/mp4" />
+            <source src={video} type="video/webm" />
+            <source src={videomp4} type="video/mp4" />
           </video>
         )}
 
@@ -197,6 +201,7 @@ export default function LyricVideo({
             <a
               href={linkYoutube}
               target="_blank"
+              rel="noopener noreferrer"
               className="duration-300 hover:scale-110"
             >
               <FaYoutube className="text-red text-5xl md:text-7xl" />
@@ -204,6 +209,7 @@ export default function LyricVideo({
             <a
               href={linkSpotify}
               target="_blank"
+              rel="noopener noreferrer"
               className="duration-300 hover:scale-110"
             >
               <FaSpotify className="text-red text-5xl md:text-7xl scale-90" />

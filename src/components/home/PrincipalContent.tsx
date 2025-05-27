@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect} from "react";
+import {Fragment, useEffect} from "react";
 import Head from "next/head";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
@@ -54,13 +54,20 @@ export default function PrincipalContent() {
     <>
       <Head>
         {lirycVideos.map((video, index) => (
-          <link
-            key={index}
-            rel="preload"
-            as="video"
-            href={video.video}
-            type="video/mp4"
-          />
+          <Fragment key={index}>
+            <link
+              rel="preload"
+              as="video"
+              href={video.video}
+              type="video/webm"
+            />
+            <link
+              rel="preload"
+              as="video"
+              href={video.videomp4}
+              type="video/mp4"
+            />
+          </Fragment>
         ))}
       </Head>
       <ClancyTape repeat={20} position="left" />
@@ -75,6 +82,7 @@ export default function PrincipalContent() {
           <div key={index}>
             <LyricVideo
               video={video.video}
+              videomp4={video.videomp4}
               title={video.title}
               lyrics={video.lyrics}
               lyricBackground={video.lyricBackground}

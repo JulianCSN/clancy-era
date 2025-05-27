@@ -1,5 +1,6 @@
 interface lirycVideos {
   video: string;
+  videomp4: string;
   title: string;
   lyrics: string;
   lyricBackground: "black" | "white";
@@ -12,6 +13,7 @@ interface lirycVideos {
 export const lirycVideos: lirycVideos[] = [
   {
     video: "/videos/overcompensate-web.webm",
+    videomp4: "/videos/overcompensate-cut.mp4",
     title: "/images/overcompensateTitle.png",
     lyrics: "/images/overcompensateLyrics.png",
     lyricBackground: "black",
@@ -23,6 +25,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/nextsemester-web.webm",
+    videomp4: "/videos/nextsemester-cut.mp4",
     title: "/images/nextsemesterTitle.png",
     lyrics: "/images/nextsemesterLyrics.png",
     lyricBackground: "black",
@@ -34,6 +37,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/backslide-web.webm",
+    videomp4: "/videos/backslide-cut.mp4",
     title: "/images/backslideTitle.png",
     lyrics: "/images/backslideLyrics.png",
     lyricBackground: "black",
@@ -45,6 +49,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/midwestindigo-web.webm",
+    videomp4: "/videos/midwestindigo-cut.mp4",
     title: "/images/midwestindigoTitle.png",
     lyrics: "/images/midwestindigoLyrics.png",
     lyricBackground: "white",
@@ -56,6 +61,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/ritn-web.webm",
+    videomp4: "/videos/ritn-cut.mp4",
     title: "/images/ritnTitle.png",
     lyrics: "/images/ritnLyrics.png",
     lyricBackground: "black",
@@ -67,6 +73,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/vignette-web.webm",
+    videomp4: "/videos/vignette-cut.mp4",
     title: "/images/vignetteTitle.png",
     lyrics: "/images/vignetteLyrics.png",
     lyricBackground: "black",
@@ -78,6 +85,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/tc-web.webm",
+    videomp4: "/videos/tc-cut.mp4",
     title: "/images/tcTitle.png",
     lyrics: "/images/tcLyrics.png",
     lyricBackground: "black",
@@ -89,6 +97,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/lavish-web.webm",
+    videomp4: "/videos/lavish-cut.mp4",
     title: "/images/lavishTitle.png",
     lyrics: "/images/lavishLyrics.png",
     lyricBackground: "white",
@@ -100,6 +109,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/navigating-web.webm",
+    videomp4: "/videos/navigating-cut.mp4",
     title: "/images/navigatingTitle.png",
     lyrics: "/images/navigatingLyrics.png",
     lyricBackground: "black",
@@ -111,6 +121,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/snapback-web.webm",
+    videomp4: "/videos/snapback-cut.mp4",
     title: "/images/snapbackTitle.png",
     lyrics: "/images/snapbackLyrics.png",
     lyricBackground: "black",
@@ -122,6 +133,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/oldiesstation-web.webm",
+    videomp4: "/videos/oldiesstation-cut.mp4",
     title: "/images/oldiesstationTitle.png",
     lyrics: "/images/oldiesstationLyrics.png",
     lyricBackground: "black",
@@ -133,6 +145,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/atrofd-web.webm",
+    videomp4: "/videos/atrofd-cut.mp4",
     title: "/images/atrofdTitle.png",
     lyrics: "/images/atrofdLyrics.png",
     lyricBackground: "black",
@@ -144,6 +157,7 @@ export const lirycVideos: lirycVideos[] = [
   },
   {
     video: "/videos/paladinstrait-web.webm",
+    videomp4: "/videos/paladinstrait-cut.mp4",
     title: "/images/paladinstraitTitleV3.png",
     lyrics: "/images/paladinstraitLyrics.png",
     lyricBackground: "black",
