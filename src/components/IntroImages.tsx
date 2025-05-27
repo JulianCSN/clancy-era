@@ -98,8 +98,8 @@ export default function IntroImages() {
         <Image
           src="/images/gallery5.png"
           alt="Clancy Image 1"
-          width={4000}
-          height={4000}
+          width={850}
+          height={850}
           quality={50}
           id="image-intro-1"
           className="w-full h-[400px] md:h-[790px] object-cover min-w-[100px] opacity-0"
@@ -120,9 +120,9 @@ export default function IntroImages() {
         <Image
           src="/images/gallery8.jpg"
           alt="Clancy Image 2"
-          width={4000}
-          height={4000}
-          quality={60}
+          width={1200}
+          height={1200}
+          quality={70}
           id="image-intro-2"
           className="w-[700px] h-[400px] md:h-[800px] object-cover min-w-[200px] mt-5 md:mt-0 filter grayscale opacity-0"
           priority

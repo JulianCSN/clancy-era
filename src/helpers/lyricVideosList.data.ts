@@ -11,7 +11,7 @@ interface lirycVideos {
 
 export const lirycVideos: lirycVideos[] = [
   {
-    video: "/videos/overcompensate-cut.mp4",
+    video: "/videos/overcompensate-web.webm",
     title: "/images/overcompensateTitle.png",
     lyrics: "/images/overcompensateLyrics.png",
     lyricBackground: "black",
@@ -22,7 +22,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/1LAlLBTGBUO0MDA8IbSysd?si=bec539fa2acf451a",
   },
   {
-    video: "/videos/nextsemester-cut.mp4",
+    video: "/videos/nextsemester-web.webm",
     title: "/images/nextsemesterTitle.png",
     lyrics: "/images/nextsemesterLyrics.png",
     lyricBackground: "black",
@@ -33,7 +33,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/1BANPzYIhCQkJ1ZFq2Fb0O?si=12a54ce9da8d4172",
   },
   {
-    video: "/videos/backslide-cut.mp4",
+    video: "/videos/backslide-web.webm",
     title: "/images/backslideTitle.png",
     lyrics: "/images/backslideLyrics.png",
     lyricBackground: "black",
@@ -44,7 +44,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/6fNaHkjAxP6rI2sZhT7QJn?si=326f16884d674adb",
   },
   {
-    video: "/videos/midwestindigo-cut.mp4",
+    video: "/videos/midwestindigo-web.webm",
     title: "/images/midwestindigoTitle.png",
     lyrics: "/images/midwestindigoLyrics.png",
     lyricBackground: "white",
@@ -55,7 +55,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/7GVQS66ukm48XZVymA3ZUg?si=7ac8ef280c6649ed",
   },
   {
-    video: "/videos/ritn-cut.mp4",
+    video: "/videos/ritn-web.webm",
     title: "/images/ritnTitle.png",
     lyrics: "/images/ritnLyrics.png",
     lyricBackground: "black",
@@ -66,7 +66,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/4bDIAWaOBGAAk95nyXI6zJ?si=a9bb56a02278401f",
   },
   {
-    video: "/videos/vignette-cut.mp4",
+    video: "/videos/vignette-web.webm",
     title: "/images/vignetteTitle.png",
     lyrics: "/images/vignetteLyrics.png",
     lyricBackground: "black",
@@ -77,7 +77,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/3sEufjE0ITaW5qhtnW3avv?si=3e9a357272224b16",
   },
   {
-    video: "/videos/tc-cut.mp4",
+    video: "/videos/tc-web.webm",
     title: "/images/tcTitle.png",
     lyrics: "/images/tcLyrics.png",
     lyricBackground: "black",
@@ -88,7 +88,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/0S7lkKStHgfgjgwSFOvRNA?si=63363d4b77f34474",
   },
   {
-    video: "/videos/lavish-cut.mp4",
+    video: "/videos/lavish-web.webm",
     title: "/images/lavishTitle.png",
     lyrics: "/images/lavishLyrics.png",
     lyricBackground: "white",
@@ -99,7 +99,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/49oxuPnuWOL793zpF6zgLQ?si=04278e0988864498",
   },
   {
-    video: "/videos/navigating-cut.mp4",
+    video: "/videos/navigating-web.webm",
     title: "/images/navigatingTitle.png",
     lyrics: "/images/navigatingLyrics.png",
     lyricBackground: "black",
@@ -110,7 +110,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/3gy21TwRSP40aUMwcY7Rtq?si=07ccaa3102d8493c",
   },
   {
-    video: "/videos/snapback-cut.mp4",
+    video: "/videos/snapback-web.webm",
     title: "/images/snapbackTitle.png",
     lyrics: "/images/snapbackLyrics.png",
     lyricBackground: "black",
@@ -121,7 +121,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/5QPGnFslbDUQ7mDteKn3By?si=d63c5fd42b8f42bf",
   },
   {
-    video: "/videos/oldiesstation-cut.mp4",
+    video: "/videos/oldiesstation-web.webm",
     title: "/images/oldiesstationTitle.png",
     lyrics: "/images/oldiesstationLyrics.png",
     lyricBackground: "black",
@@ -132,7 +132,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/7dI0mSvbdJTynUnEkWIom1?si=b87225eae44d4eb4",
   },
   {
-    video: "/videos/atrofd-cut.mp4",
+    video: "/videos/atrofd-web.webm",
     title: "/images/atrofdTitle.png",
     lyrics: "/images/atrofdLyrics.png",
     lyricBackground: "black",
@@ -143,7 +143,7 @@ export const lirycVideos: lirycVideos[] = [
       "https://open.spotify.com/intl-es/track/0ZucyPms79Cydv0RMYV2Oi?si=644e1d3a648b4758",
   },
   {
-    video: "/videos/paladinstrait-cut-2.mp4",
+    video: "/videos/paladinstrait-web.webm",
     title: "/images/paladinstraitTitleV3.png",
     lyrics: "/images/paladinstraitLyrics.png",
     lyricBackground: "black",
