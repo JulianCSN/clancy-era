@@ -90,6 +90,7 @@ export default function PrincipalContent() {
               image2={video.image2}
               linkYoutube={video.linkYoutube}
               linkSpotify={video.linkSpotify}
+              linkAppleMusic={video.linkAppleMusic}
             />
           </div>
         );

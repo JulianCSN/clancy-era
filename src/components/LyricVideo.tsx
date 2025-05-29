@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {FaYoutube, FaSpotify} from "react-icons/fa6";
+import {SiApplemusic} from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,6 +19,7 @@ interface Props {
   image2: string;
   linkYoutube: string;
   linkSpotify: string;
+  linkAppleMusic: string;
 }
 
 export default function LyricVideo({
@@ -30,6 +32,7 @@ export default function LyricVideo({
   image2,
   linkYoutube,
   linkSpotify,
+  linkAppleMusic,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -196,25 +199,31 @@ export default function LyricVideo({
         </div>
 
         {/* Social media links */}
-        <div className="flex flex-col items-center justify-center mt-12 md:mt-26">
-          <div className="flex gap-10">
-            <a
-              href={linkYoutube}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="duration-300 hover:scale-110"
-            >
-              <FaYoutube className="text-red text-5xl md:text-7xl" />
-            </a>
-            <a
-              href={linkSpotify}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="duration-300 hover:scale-110"
-            >
-              <FaSpotify className="text-red text-5xl md:text-7xl scale-90" />
-            </a>
-          </div>
+        <div className="flex flex-row items-center justify-center gap-8 mt-12 md:mt-26">
+          <a
+            href={linkYoutube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="duration-300 hover:scale-110"
+          >
+            <FaYoutube className="text-red text-5xl md:text-7xl" />
+          </a>
+          <a
+            href={linkSpotify}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="duration-300 hover:scale-110"
+          >
+            <FaSpotify className="text-red text-5xl md:text-7xl scale-90" />
+          </a>
+          <a
+            href={linkAppleMusic}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="duration-300 hover:scale-110"
+          >
+            <SiApplemusic className="text-red text-5xl md:text-7xl scale-80" />
+          </a>
         </div>
         <div id="end-video" className="h-[50vh] w-full" />
       </div>
