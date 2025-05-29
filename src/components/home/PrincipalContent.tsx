@@ -58,12 +58,6 @@ export default function PrincipalContent() {
             <link
               rel="preload"
               as="video"
-              href={video.video}
-              type="video/webm"
-            />
-            <link
-              rel="preload"
-              as="video"
               href={video.videomp4}
               type="video/mp4"
             />
@@ -81,7 +75,6 @@ export default function PrincipalContent() {
         return (
           <div key={index}>
             <LyricVideo
-              video={video.video}
               videomp4={video.videomp4}
               title={video.title}
               lyrics={video.lyrics}

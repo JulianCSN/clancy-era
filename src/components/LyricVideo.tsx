@@ -10,7 +10,6 @@ import {SiApplemusic} from "react-icons/si";
 gsap.registerPlugin(ScrollTrigger);
 
 interface Props {
-  video: string;
   videomp4: string;
   title: string;
   lyrics: string;
@@ -23,7 +22,6 @@ interface Props {
 }
 
 export default function LyricVideo({
-  video,
   videomp4,
   title,
   lyrics,
@@ -138,7 +136,7 @@ export default function LyricVideo({
             playsInline
             className="fixed top-0 left-0 w-full h-full object-cover z-[-1] opacity-0 pointer-events-none"
           >
-            <source src={video} type="video/webm" />
+            {/* <source src={video} type="video/webm" /> */}
             <source src={videomp4} type="video/mp4" />
           </video>
         )}
